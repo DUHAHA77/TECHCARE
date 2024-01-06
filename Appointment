@@ -1,0 +1,85 @@
+<Window x:Class="Schadule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Schadule"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="530" Width="800">
+
+
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left column for time -->
+        <ListBox Grid.Column="0" Margin="10,10,0,0">
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected" Content="5:00 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_1" Content="5:30 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_2" Content="6:00 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_3" Content="6:30 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_4" Content="7:00 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_5" Content="7:30 PM"/>
+            <ListBoxItem Height="50" Selected="ListBoxItem_Selected_6" Content="8:00 PM"/>
+            <!-- Add more time slots as needed -->
+        </ListBox>
+
+        <!-- Right column for schedule -->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="439*"/>
+                <RowDefinition Height="95*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <!-- Schedule grid -->
+            <DataGrid AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged" Margin="-4,10,200,10" Grid.RowSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Monday" />
+                    <DataGridTextColumn Header="Tuesday"/>
+                    <DataGridTextColumn Header="Wednesday"/>
+                    <DataGridTextColumn Header="Thursday"/>
+                    <DataGridTextColumn Header="Friday"/>
+                    <DataGridTextColumn Header="Saterday" />
+                    <DataGridTextColumn Header="Sunday" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+            <StackPanel Grid.Column="1" Margin="533,10,10,-10" >
+                <Calendar Foreground="White" OpacityMask="Black" >
+                    <Calendar.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA3AEB9"/>
+                            <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                            <GradientStop Color="#FF718597" Offset="0.375"/>
+                            <GradientStop Color="#FFA6B0B7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Calendar.BorderBrush>
+                    <Calendar.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE4EAF0"/>
+                            <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                            <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                            <GradientStop Color="#FF65BB85" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Calendar.Background>
+                </Calendar>
+                <Grid Height="185" Background="#FFEFEFEF" Width="170" >
+                    <CheckBox Content="Notrtion" HorizontalAlignment="Left" Margin="33,39,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Background="#FF65BB85"/>
+                    <CheckBox Content="Physiotherapy" HorizontalAlignment="Left" Margin="33,66,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Background="#FF6865BB"/>
+                    <CheckBox Content="SkinCare" HorizontalAlignment="Left" Margin="33,92,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Background="#FFD4FF00"/>
+                </Grid>
+
+                <Button Content="Back" Style="{StaticResource button}" Click="Button_Click" Width="NaN" Margin="20,0,36,20" RenderTransformOrigin="0.311,0.51" Foreground="#FF65BB85" />
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
