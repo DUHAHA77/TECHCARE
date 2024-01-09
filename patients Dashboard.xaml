@@ -1,0 +1,228 @@
+﻿<Window x:Class="Clinical_project_firstDraft.patients_Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clinical_project_firstDraft"
+        mc:Ignorable="d"
+        Title="patients_Dashboard" Height="1100" Width="1400">
+    <Grid Background="#FFF6F6F6">
+        <Grid HorizontalAlignment="Left" Height="1027" VerticalAlignment="Center" Width="152" Background="#FF65BB85">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" Margin="0,78,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="36" Width="51" FontSize="16"/>
+            <Button Content="Add info" HorizontalAlignment="Center" Margin="0,478,0,0" VerticalAlignment="Top" Height="57" Width="113" FontWeight="Bold" Background="#FF65BB85" BorderBrush="#FF65BB85" Foreground="white" RenderTransformOrigin="0.455,0.386" FontSize="16">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="126*"/>
+                                <ColumnDefinition Width="59*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Grid.ColumnSpan="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button Content="overview" HorizontalAlignment="Center" Margin="0,373,0,0" VerticalAlignment="Top" Height="57" Width="110" FontWeight="Bold" Background="#FF65BB85" BorderBrush="#FF65BB85" Foreground="white" RenderTransformOrigin="0.455,0.386" FontSize="16">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="126*"/>
+                                <ColumnDefinition Width="59*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Grid.ColumnSpan="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button Content="Dashboard" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top" Height="52" Width="110" FontWeight="Bold" Background="#FF65BB85" BorderBrush="#FF65BB85" Foreground="white" RenderTransformOrigin="0.455,0.386" FontSize="16">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="126*"/>
+                                <ColumnDefinition Width="59*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Grid.ColumnSpan="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button Content="Logout" HorizontalAlignment="Center" Margin="0,805,0,0" VerticalAlignment="Top" Height="57" Width="114" FontWeight="Bold" Background="#FF65BB85" BorderBrush="#FF65BB85" Foreground="white" RenderTransformOrigin="0.455,0.386" FontSize="16">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="126*"/>
+                                <ColumnDefinition Width="59*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Grid.ColumnSpan="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Ellipse Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="81" Margin="101,965,0,0" Grid.RowSpan="2" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="69" Margin="101,867,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Left" Height="105" Margin="-43,965,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="119" Fill="#FF72C892" Grid.RowSpan="2"/>
+            <Ellipse Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="124" Margin="101,596,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Left" Height="81" Margin="21,555,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Left" Height="80" Margin="-43,658,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Left" Height="81" Margin="76,160,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="103" Fill="#FF72C892" Grid.ColumnSpan="2"/>
+            <Ellipse HorizontalAlignment="Left" Height="81" Margin="-43,303,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Left" Height="114" Margin="-43,0,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse HorizontalAlignment="Center" Height="81" Margin="0,-22,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892" Grid.Column="1"/>
+            <Ellipse HorizontalAlignment="Left" Height="81" Margin="101,0,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892" Grid.ColumnSpan="2"/>
+            <Ellipse Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="69" Margin="101,867,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892"/>
+            <Ellipse Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="81" Margin="101,29,0,0" Stroke="#FF65BB85" VerticalAlignment="Top" Width="78" Fill="#FF72C892" Grid.Row="1"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="55" Margin="51,34,0,0" VerticalAlignment="Top" Width="62" Source="/user_3801844.png"/>
+        <Label Content="ID: 1233456" HorizontalAlignment="Left" Height="28" Margin="22,154,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" Foreground="White" FontSize="16"/>
+        <Label Content="Goal: weight loss" HorizontalAlignment="Left" Height="40" Margin="10,196,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" Foreground="White" FontSize="16"/>
+        <Grid HorizontalAlignment="Left" Height="212" Margin="170,43,0,0" VerticalAlignment="Top" Width="386" Background="White">
+            <Label Content="progress over time" HorizontalAlignment="Center" Height="32" VerticalAlignment="Top" Width="154" FontSize="16"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="218" Margin="580,44,0,0" VerticalAlignment="Top" Width="312" Background="White"/>
+        <Grid HorizontalAlignment="Left" Height="186" Margin="173,652,0,0" VerticalAlignment="Top" Width="423" Background="White">
+            <Label Content="old plans" HorizontalAlignment="Center" Height="37" Margin="0,10,0,0" VerticalAlignment="Top" Width="82" FontSize="16"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="326" Margin="178,307,0,0" VerticalAlignment="Top" Width="360" Background="White">
+            <Label Content="history" HorizontalAlignment="Center" Height="36" Margin="0,10,0,0" VerticalAlignment="Top" Width="64" FontSize="16"/>
+            <DocumentViewer HorizontalAlignment="Center" Height="257" Margin="0,51,0,0" VerticalAlignment="Top" Width="328"/>
+        </Grid>
+        <Label Content="tracking Acheivement and goal" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="250" FontSize="16" Margin="624,54,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="297" Margin="562,309,0,0" VerticalAlignment="Top" Width="328" Background="White"/>
+        <Label Content="lab tests" HorizontalAlignment="Left" Height="40" Margin="680,315,0,0" VerticalAlignment="Top" Width="92" FontSize="16"/>
+        <ScrollBar HorizontalAlignment="Left" Height="267" Margin="858,324,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Grid HorizontalAlignment="Left" Height="428" Margin="924,44,0,0" VerticalAlignment="Top" Width="438" Background="White">
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="146,53,0,0" TextWrapping="Wrap" Text="...%" VerticalAlignment="Top" Width="46"/>
+            <TextBlock HorizontalAlignment="Left" Height="18" Margin="144,141,0,0" TextWrapping="Wrap" Text="...%" VerticalAlignment="Top" Width="46"/>
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="146,100,0,0" TextWrapping="Wrap" Text="...%" VerticalAlignment="Top" Width="46"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="236,53,0,0" TextWrapping="Wrap" Text="...gm" VerticalAlignment="Top" Width="46"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="232,141,0,0" TextWrapping="Wrap" Text="...gm" VerticalAlignment="Top" Width="46"/>
+            <TextBlock HorizontalAlignment="Left" Height="16" Margin="234,100,0,0" TextWrapping="Wrap" Text="...gm" VerticalAlignment="Top" Width="46"/>
+            <Image HorizontalAlignment="Center" Height="219" Margin="0,193,0,0" VerticalAlignment="Top" Width="288" Source="/Screenshot-2019-10-18-at-21.04.08-1200x900.png"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="980,107,0,0" TextWrapping="Wrap" Text="Protien = " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="984,151,0,0" TextWrapping="Wrap" Text="Carbs = " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="990,193,0,0" TextWrapping="Wrap" Text="Fats = " VerticalAlignment="Top"/>
+        <ScrollBar HorizontalAlignment="Left" Height="372" Margin="1329,76,0,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Label Content="nutrition analysis" HorizontalAlignment="Left" Height="36" Margin="1074,53,0,0" VerticalAlignment="Top" Width="138" FontSize="16"/>
+        <Grid HorizontalAlignment="Left" Height="272" Margin="924,784,0,0" VerticalAlignment="Top" Width="438" Background="White">
+            <Label Content="measurements" HorizontalAlignment="Center" Height="28" Margin="0,10,0,0" VerticalAlignment="Top" Width="117" FontSize="16"/>
+            <Grid HorizontalAlignment="Center" Height="374" VerticalAlignment="Top" Width="394" Background="White" Margin="0,38,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="119*"/>
+                    <ColumnDefinition Width="275*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Margin="95,50,126,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Grid.Column="1"/>
+                <TextBlock HorizontalAlignment="Left" Margin="28,276,0,0" TextWrapping="Wrap" Text="Waist size" VerticalAlignment="Top" Width="54"/>
+                <TextBlock HorizontalAlignment="Left" Margin="30,119,0,0" TextWrapping="Wrap" Text="Hips size" VerticalAlignment="Top" Width="54"/>
+                <TextBlock HorizontalAlignment="Left" Margin="95,284,0,0" TextWrapping="Wrap" Text="Neck size" VerticalAlignment="Top" Width="52" Grid.Column="1"/>
+                <TextBlock HorizontalAlignment="Left" Margin="30,51,0,0" TextWrapping="Wrap" Text="Arm size" VerticalAlignment="Top" Width="68"/>
+                <TextBlock HorizontalAlignment="Left" Margin="30,201,0,0" TextWrapping="Wrap" Text="Leg size" VerticalAlignment="Top" Width="68"/>
+                <TextBlock HorizontalAlignment="Left" Margin="95,122,0,0" TextWrapping="Wrap" Text="Breast size" VerticalAlignment="Top" Width="104" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="96,208,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="96,288,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="177,49,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="96,131,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="177,121,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="96,51,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="177,288,0,0" TextWrapping="Wrap" Text=".." VerticalAlignment="Top" Width="48" Grid.Column="1"/>
+                <DatePicker HorizontalAlignment="Left" Margin="30,348,0,0" VerticalAlignment="Top" Height="35" Width="168" FontSize="14" Grid.ColumnSpan="2"/>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="199" Margin="178,866,0,0" VerticalAlignment="Top" Width="418" Background="White"/>
+        <Label Content="notes" HorizontalAlignment="Left" Height="40" Margin="352,877,0,0" VerticalAlignment="Top" Width="70" FontSize="16"/>
+        <ScrollBar HorizontalAlignment="Left" Height="165" Margin="564,877,0,0" VerticalAlignment="Top" Width="21" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <TextBlock HorizontalAlignment="Left" Margin="206,926,0,0" TextWrapping="Wrap" Text="supplements" VerticalAlignment="Top" Width="82" Height="17"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,973,0,0" TextWrapping="Wrap" Text="exercises" VerticalAlignment="Top" Width="56" Height="18"/>
+        <ScrollBar HorizontalAlignment="Left" Height="246" Margin="1332,800,0,0" VerticalAlignment="Top" Width="11" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Image Margin="196,84,862,848" Source="/Image2.png" Stretch="Fill"/>
+        <Image Margin="598,355,566,499" Source="/Image5.png" Stretch="Fill"/>
+        <Label Content="Before" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="55" FontSize="16" Margin="1508,67,0,0"/>
+        <DocumentViewer HorizontalAlignment="Left" Height="126" Margin="196,699,0,0" VerticalAlignment="Top" Width="382"/>
+        <Grid HorizontalAlignment="Left" Height="235" Margin="905,519,0,0" VerticalAlignment="Top" Width="476" Background="White">
+            <Label Content="current plan" HorizontalAlignment="Center" Height="38" VerticalAlignment="Top" Width="114" FontSize="16"/>
+            <DocumentViewer HorizontalAlignment="Center" Height="187" Margin="0,38,0,0" VerticalAlignment="Top" Width="456"/>
+        </Grid>
+        <Image Margin="953,594,67,370" Source="/Image3.png" Stretch="Fill"/>
+        <Grid HorizontalAlignment="Left" Height="199" Margin="610,642,0,0" VerticalAlignment="Top" Width="281" Background="White"/>
+        <Grid HorizontalAlignment="Left" Height="199" Margin="611,866,0,0" VerticalAlignment="Top" Width="281" Background="White"/>
+        <Label Content="Before" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="68" FontSize="16" Margin="718,652,0,0"/>
+        <Label Content="After" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="50" FontSize="16" Margin="727,866,0,0"/>
+        <Image Margin="610,82,526,830" Source="/Image12.png" Stretch="Fill"/>
+        <Button Content="What's App" HorizontalAlignment="Left" Margin="24,765,0,0" VerticalAlignment="Top" Height="57" Width="114" FontWeight="Bold" Background="#FF65BB85" BorderBrush="#FF65BB85" Foreground="white" RenderTransformOrigin="0.455,0.386" FontSize="16">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="126*"/>
+                            <ColumnDefinition Width="59*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Grid.ColumnSpan="2">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
+    </Grid>
+</Window>
