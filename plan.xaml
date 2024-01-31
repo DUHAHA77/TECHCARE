@@ -1,0 +1,178 @@
+﻿<Window x:Class="draft_clinical_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:draft_clinical_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Viewbox Stretch="Uniform">
+        <Grid x:Name="PageContainer" Background="#FFF0F0F0" Height="384" Margin="10,25,10,25">
+            <TabControl x:Name="PlanTabControl" HorizontalAlignment="Center" Height="384" VerticalAlignment="Center" Width="780">
+                <TabItem Header="Day1">
+                    <Grid x:Name="grid1" Background="#FFE5E5E5">
+                        <Grid x:Name="grid2" HorizontalAlignment="Left" Height="74" Margin="4,22,0,0" VerticalAlignment="Top" Width="750" Background="White">
+                            <Label x:Name="label1" Content="Breakfast" HorizontalAlignment="Left" Height="23" Margin="6,4,0,0" VerticalAlignment="Top" Width="50" FontSize="10"/>
+                            <ComboBox x:Name="PcomboBox" HorizontalAlignment="Left" Height="16" Margin="67,18,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="PComboBox_SelectionChanged" FontSize="8" Text="Protein"/>
+                            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="16" Margin="141,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Height="32" Margin="328,32,0,0" VerticalAlignment="Top" Width="130" FontSize="8" SelectionChanged="RMComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="54" Margin="537,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="198" RenderTransformOrigin="0.5,0.5" TextChanged="textBox2_TextChanged">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleY="-0.105"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform Y="-0.398"/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+                            <Label x:Name="label2" Content="Notes" HorizontalAlignment="Left" Height="22" Margin="487,11,0,0" VerticalAlignment="Top" Width="42" FontSize="8"/>
+                            <Label x:Name="label3" Content="Recommended meal" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="94" FontSize="9"/>
+                            <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Height="16" Margin="192,18,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="CComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="16" Margin="266,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox4" HorizontalAlignment="Left" Height="16" Margin="67,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="FComboBox_SelectionChanged"/>
+                            <ComboBox x:Name="comboBox5" HorizontalAlignment="Left" Height="16" Margin="192,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="F2ComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="16" Margin="141,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="16" Margin="266,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label x:Name="label5" Content="Carbs" HorizontalAlignment="Left" Height="19" Margin="192,0,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label6" Content="Fats" HorizontalAlignment="Left" Height="19" Margin="67,32,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label7" Content="Fibers" HorizontalAlignment="Left" Height="19" Margin="192,32,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label18_Copy" Content="Proteins" HorizontalAlignment="Left" Height="19" Margin="67,0,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                        </Grid>
+
+                        <Grid HorizontalAlignment="Left" Height="84" Margin="4,262,0,0" VerticalAlignment="Top" Width="323" Background="White">
+                            <Label x:Name="label8" Content="Snack1" HorizontalAlignment="Left" Height="24" Margin="-5,-6,0,0" VerticalAlignment="Top" Width="42" FontSize="10"/>
+                            <ComboBox x:Name="PcomboBox6" HorizontalAlignment="Left" Height="16" Margin="3,24,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="PComboBox_SelectionChanged" FontSize="8"/>
+                            <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="16" Margin="77,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label x:Name="label9" Content="Proteins" HorizontalAlignment="Left" Height="19" Margin="3,7,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <ComboBox x:Name="comboBox7" HorizontalAlignment="Left" Height="16" Margin="110,24,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="FComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="16" Margin="184,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox8" HorizontalAlignment="Left" Height="16" Margin="3,53,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="CComboBox_SelectionChanged"/>
+                            <ComboBox x:Name="comboBox9" HorizontalAlignment="Left" Height="16" Margin="110,54,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="F2ComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="16" Margin="184,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="16" Margin="77,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox10" HorizontalAlignment="Left" Height="25" Margin="218,15,0,0" VerticalAlignment="Top" Width="95" FontSize="8" SelectionChanged="RMComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox10" HorizontalAlignment="Left" Height="25" Margin="218,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label x:Name="label10" Content="Notes" HorizontalAlignment="Left" Height="20" Margin="218,40,0,0" VerticalAlignment="Top" Width="30" FontSize="7"/>
+                            <Label x:Name="label11" Content="Carbs" HorizontalAlignment="Left" Height="19" Margin="3,35,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label12" Content="Fibers" HorizontalAlignment="Left" Height="19" Margin="110,37,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label13" Content="Fats" HorizontalAlignment="Left" Height="19" Margin="110,6,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label14" Content="Recommended meal&#xD;&#xA;" HorizontalAlignment="Left" Height="20" Margin="218,-3,0,0" VerticalAlignment="Top" Width="76" FontSize="7"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Height="74" Margin="4,101,0,0" VerticalAlignment="Top" Width="750" Background="White">
+                            <Label x:Name="label15" Content="Lunch" HorizontalAlignment="Left" Height="23" Margin="6,4,0,0" VerticalAlignment="Top" Width="50" FontSize="10"/>
+                            <ComboBox x:Name="PcomboBox11" HorizontalAlignment="Left" Height="16" Margin="67,19,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="PComboBox_SelectionChanged" FontSize="8"/>
+                            <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="16" Margin="141,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox12" HorizontalAlignment="Left" Height="32" Margin="328,31,0,0" VerticalAlignment="Top" Width="130" FontSize="8" SelectionChanged="RMComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox12" HorizontalAlignment="Left" Height="54" Margin="537,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="198" RenderTransformOrigin="0.5,0.5" TextChanged="textBox2_TextChanged">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleY="-0.105"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform Y="-0.398"/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+                            <Label x:Name="label16" Content="Notes" HorizontalAlignment="Left" Height="22" Margin="487,11,0,0" VerticalAlignment="Top" Width="42" FontSize="8"/>
+                            <Label x:Name="label17" Content="Recommended meal" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="94" FontSize="9"/>
+                            <Label x:Name="label18" Content="Proteins" HorizontalAlignment="Left" Height="19" Margin="67,1,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <ComboBox x:Name="comboBox13" HorizontalAlignment="Left" Height="16" Margin="192,21,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="CComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox13" HorizontalAlignment="Left" Height="16" Margin="266,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox14" HorizontalAlignment="Left" Height="16" Margin="67,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="FComboBox_SelectionChanged"/>
+                            <ComboBox x:Name="comboBox15" HorizontalAlignment="Left" Height="16" Margin="192,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="F2ComboBox_SelectionChanged"/>
+                            <TextBox x:Name="textBox14" HorizontalAlignment="Left" Height="16" Margin="141,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <TextBox x:Name="textBox15" HorizontalAlignment="Left" Height="16" Margin="266,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label x:Name="label19" Content="Carbs" HorizontalAlignment="Left" Height="19" Margin="192,4,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label20" Content="Fats" HorizontalAlignment="Left" Height="19" Margin="67,33,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label x:Name="label21" Content="Fibers" HorizontalAlignment="Left" Height="19" Margin="192,33,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Height="74" Margin="4,180,0,0" VerticalAlignment="Top" Width="750" Background="White">
+                            <Label Content="Dinner" HorizontalAlignment="Left" Height="23" Margin="6,4,0,0" VerticalAlignment="Top" Width="50" FontSize="10"/>
+                            <ComboBox x:Name="PcomboBox16" HorizontalAlignment="Left" Height="16" Margin="67,19,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="PComboBox_SelectionChanged" FontSize="8"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="141,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox24" HorizontalAlignment="Left" Height="32" Margin="328,31,0,0" VerticalAlignment="Top" Width="130" FontSize="8" SelectionChanged="RMComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="54" Margin="537,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="198" RenderTransformOrigin="0.5,0.5" TextChanged="textBox2_TextChanged">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleY="-0.105"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform Y="-0.398"/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+                            <Label Content="Notes" HorizontalAlignment="Left" Height="22" Margin="487,11,0,0" VerticalAlignment="Top" Width="42" FontSize="8"/>
+                            <Label Content="Recommended meal" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="94" FontSize="9"/>
+                            <Label Content="Proteins" HorizontalAlignment="Left" Height="19" Margin="67,2,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <ComboBox x:Name="comboBox17" HorizontalAlignment="Left" Height="16" Margin="192,20,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="CComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="266,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox20" HorizontalAlignment="Left" Height="16" Margin="67,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="FComboBox_SelectionChanged"/>
+                            <ComboBox x:Name="comboBox22" HorizontalAlignment="Left" Height="16" Margin="192,50,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="F2ComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="141,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="266,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label Content="Carbs" HorizontalAlignment="Left" Height="19" Margin="192,2,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label Content="Fats" HorizontalAlignment="Left" Height="19" Margin="67,31,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label Content="Fibers" HorizontalAlignment="Left" Height="19" Margin="192,33,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                        </Grid>
+
+                        <Grid HorizontalAlignment="Left" Height="84" Margin="337,262,0,0" VerticalAlignment="Top" Width="323" Background="White">
+                            <Label Content="Snack2" HorizontalAlignment="Left" Height="24" Margin="-5,-6,0,0" VerticalAlignment="Top" Width="42" FontSize="10"/>
+                            <ComboBox x:Name="PcomboBox17" HorizontalAlignment="Left" Height="16" Margin="3,23,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="PComboBox_SelectionChanged" FontSize="8"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="77,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label Content="Proteins" HorizontalAlignment="Left" Height="19" Margin="2,6,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <ComboBox x:Name="comboBox21" HorizontalAlignment="Left" Height="16" Margin="110,23,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="FComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="184,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox18" HorizontalAlignment="Left" Height="16" Margin="3,55,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="CComboBox_SelectionChanged"/>
+                            <ComboBox x:Name="comboBox23" HorizontalAlignment="Left" Height="16" Margin="110,55,0,0" VerticalAlignment="Top" Width="69" FontSize="8" SelectionChanged="F2ComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="184,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="16" Margin="77,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="22" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <ComboBox x:Name="comboBox25" HorizontalAlignment="Left" Height="25" Margin="218,16,0,0" VerticalAlignment="Top" Width="95" FontSize="8" SelectionChanged="RMComboBox_SelectionChanged"/>
+                            <TextBox HorizontalAlignment="Left" Height="23" Margin="218,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontSize="7" TextChanged="textBox2_TextChanged"/>
+                            <Label Content="Notes" HorizontalAlignment="Left" Height="20" Margin="218,38,0,0" VerticalAlignment="Top" Width="30" FontSize="7"/>
+                            <Label Content="Carbs" HorizontalAlignment="Left" Height="19" Margin="3,37,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label Content="Fibers" HorizontalAlignment="Left" Height="19" Margin="110,39,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label Content="Fats" HorizontalAlignment="Left" Height="19" Margin="110,7,0,0" VerticalAlignment="Top" Width="39" FontSize="8"/>
+                            <Label Content="Recommended meal&#xA;" HorizontalAlignment="Left" Height="18" Margin="218,-2,0,0" VerticalAlignment="Top" Width="76" FontSize="7"/>
+                        </Grid>
+                        <Button x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Height="40" Margin="673,266,0,0" VerticalAlignment="Top" Width="73" Click="AddButton_Click" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="Gainsboro" Foreground="white" RenderTransformOrigin="0.455,0.386">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Grid>
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Button.Template>
+
+                        </Button>
+                        <Button Content="Print" HorizontalAlignment="Left" Height="33" Margin="674,313,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="Gainsboro" Foreground="white" RenderTransformOrigin="0.455,0.386" Click="Button_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Grid>
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <ScrollBar x:Name="scrollBar" HorizontalAlignment="Left" Height="336" Margin="757,0,0,0" VerticalAlignment="Center" Width="1" RenderTransformOrigin="0.5,0.5">
+                            <ScrollBar.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="-1"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ScrollBar.RenderTransform>
+                        </ScrollBar>
+
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Viewbox>
+</Window>

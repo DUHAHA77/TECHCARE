@@ -1,116 +1,119 @@
-﻿<Window x:Class="Clinical_project_firstDraft.printed_plan"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clinical_project_firstDraft"
-        mc:Ignorable="d"
-        Title="printed_plan" Height="700" Width="500">
-    <Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="24" Margin="19,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
-        <Label Content="1500" HorizontalAlignment="Left" Height="23" Margin="26,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
-        <Label Content="protien" HorizontalAlignment="Left" Height="24" Margin="83,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
-        <Label Content="30g" HorizontalAlignment="Left" Height="23" Margin="90,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="24" Margin="143,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
-        <Label Content="40g" HorizontalAlignment="Left" Height="23" Margin="150,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
-        <Label Content="fats" HorizontalAlignment="Left" Height="24" Margin="209,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
-        <Label Content="10g" HorizontalAlignment="Left" Height="23" Margin="209,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
-        <Grid HorizontalAlignment="Left" Height="172" Margin="26,93,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
-            <Label Content="Breakfast" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-        </Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="126,100,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="126,114,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="126,125,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="126,139,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Grid HorizontalAlignment="Left" Height="172" Margin="264,93,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
-            <Label Content="Snack 1" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-        </Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="364,100,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="364,114,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="364,125,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="364,139,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Grid HorizontalAlignment="Left" Height="172" Margin="26,296,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
-            <Label Content="Lunch" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-        </Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="126,303,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="126,317,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="126,328,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="126,342,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Grid HorizontalAlignment="Left" Height="172" Margin="264,296,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
-            <Label Content="Snack 2" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-        </Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="364,303,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="364,317,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="364,328,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="364,342,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Grid HorizontalAlignment="Left" Height="172" Margin="26,494,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
-            <Label Content="Dinner" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-            <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
-        </Grid>
-        <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="126,501,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="126,515,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="126,526,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="126,540,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
-        <Label Content="Notes" HorizontalAlignment="Left" Height="24" Margin="351,487,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label Content="Supplements" HorizontalAlignment="Left" Height="25" Margin="257,521,0,0" VerticalAlignment="Top" Width="75" FontSize="9"/>
-        <Image HorizontalAlignment="Left" Height="64" Margin="398,10,0,0" VerticalAlignment="Top" Width="77" Source="/healthy-food_1545639.png"/>
-        <Label Content="Boiled Eggs" HorizontalAlignment="Left" Height="50" Margin="26,135,0,0" VerticalAlignment="Top" Width="117"/>
-        <Label Content="1 Toast" HorizontalAlignment="Left" Height="50" Margin="26,159,0,0" VerticalAlignment="Top" Width="117"/>
-        <Label Content=" salad" HorizontalAlignment="Left" Height="50" Margin="26,179,0,0" VerticalAlignment="Top" Width="117"/>
-        <Button Content="Print" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386" Click="Button_Click" Margin="424,609,0,0">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
+﻿<Page x:Class="clinical_draft3.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_draft3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+    <Viewbox x:Name="MainViewbox" Stretch="Uniform">
+        <Grid x:Name="MainGrid" Background="White">
+            <Label Content="Calories" HorizontalAlignment="Left" Height="24" Margin="19,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
+            <Label Content="1500" HorizontalAlignment="Left" Height="23" Margin="26,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
+            <Label Content="protien" HorizontalAlignment="Left" Height="24" Margin="83,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
+            <Label Content="30g" HorizontalAlignment="Left" Height="23" Margin="90,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="24" Margin="143,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
+            <Label Content="40g" HorizontalAlignment="Left" Height="23" Margin="150,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
+            <Label Content="fats" HorizontalAlignment="Left" Height="24" Margin="209,21,0,0" VerticalAlignment="Top" Width="48" FontSize="11"/>
+            <Label Content="10g" HorizontalAlignment="Left" Height="23" Margin="209,33,0,0" VerticalAlignment="Top" Width="34" FontSize="10"/>
+            <Grid HorizontalAlignment="Left" Height="172" Margin="46,73,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
+                <Label Content="Breakfast" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+            </Grid>
+            <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="146,80,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="146,94,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="146,105,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="146,119,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Grid HorizontalAlignment="Left" Height="172" Margin="302,75,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
+                <Label Content="Snack 1" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+            </Grid>
+            <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="403,82,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="403,96,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="403,107,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="403,121,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Grid HorizontalAlignment="Left" Height="172" Margin="558,75,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
+                <Label Content="Lunch" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+            </Grid>
+            <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="658,81,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="658,95,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="658,106,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="658,120,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Grid HorizontalAlignment="Left" Height="172" Margin="48,264,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
+                <Label Content="Snack 2" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+            </Grid>
+            <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="148,271,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="148,285,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="148,296,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="148,310,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Grid HorizontalAlignment="Left" Height="172" Margin="302,264,0,0" VerticalAlignment="Top" Width="200" Background="#FFEDEDED">
+                <Label Content="Dinner" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Bold"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,14,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,26,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,38,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+                <ProgressBar HorizontalAlignment="Left" Height="7" Margin="140,50,0,0" VerticalAlignment="Top" Width="47" Background="White"/>
+            </Grid>
+            <Label Content="Calories" HorizontalAlignment="Left" Height="20" Margin="402,270,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Protiens" HorizontalAlignment="Left" Height="20" Margin="402,284,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Carbs" HorizontalAlignment="Left" Height="20" Margin="402,296,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Fats" HorizontalAlignment="Left" Height="20" Margin="402,310,0,0" VerticalAlignment="Top" Width="34" FontSize="6"/>
+            <Label Content="Notes" HorizontalAlignment="Left" Height="24" Margin="635,256,0,0" VerticalAlignment="Top" Width="47"/>
+            <Label Content="Supplements" HorizontalAlignment="Left" Height="26" Margin="541,290,0,0" VerticalAlignment="Top" Width="75" FontSize="9"/>
+            <Label Content="Boiled Eggs" HorizontalAlignment="Left" Height="50" Margin="46,115,0,0" VerticalAlignment="Top" Width="117"/>
+            <Label Content="1 Toast" HorizontalAlignment="Left" Height="50" Margin="46,139,0,0" VerticalAlignment="Top" Width="117"/>
+            <Label Content=" salad" HorizontalAlignment="Left" Height="50" Margin="46,159,0,0" VerticalAlignment="Top" Width="117"/>
+            <Button Content="Print" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386"  Margin="708,378,0,0">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
 
-        </Button>
-        <Button Content="Send" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386" Click="Button_Click" Margin="424,645,0,0">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
+            </Button>
+            <Button Content="Send" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386"  Margin="708,414,0,0">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
 
-        </Button>
-        <Button Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386" Click="Button_Click" Margin="424,573,0,0">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </Grid>
-                </ControlTemplate>
-            </Button.Template>
+            </Button>
+            <Button Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="66" FontSize="14" FontWeight="Bold" Background="#FF65BB85" BorderBrush="White" Foreground="white" RenderTransformOrigin="0.455,0.386"  Margin="708,342,0,0" Click="Button_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
 
-        </Button>
-    </Grid>
-</Window>
+            </Button>
+        </Grid>
+    </Viewbox>
+    
+</Page>
